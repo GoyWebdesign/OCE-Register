@@ -1,0 +1,20 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i');
+body {
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+}
+.navbar {border-radius: 0px;}
+.bg-itta {
+    background-color: hsla(182,59%,48%,0.50);
+}
+.navbar-brand.color-itta {
+    margin-top:-4px;
+}
+.breadcrumb {
+    margin-top: -20px;
+    background-color: #B40068;
+    color: #FFF;
+    border-radius: 0px;
+}
+.st0{fill:#FFFFFF;}
