@@ -6,7 +6,7 @@ body {
 .navbar-brand.color-itta {
 
 }
-
+.navbar {border-radius: 0px;}
 .bg-itta {
     background-color: hsla(182,59%,48%,0.50);
 }
@@ -19,4 +19,10 @@ body {
     letter-spacing: 4px;
     display: none;
 }
-.navbar-header img {margin-right:10px;}
+.breadcrumb {
+    margin-top: -20px;
+    background-color: #B40068;
+    color: #FFF;
+    border-radius: 0px;
+}
+
