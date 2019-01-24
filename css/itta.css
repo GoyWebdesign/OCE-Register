@@ -22,3 +22,10 @@ body {
     color: #FFF;
     border-radius: 0px;
 }
+.container .navbar.navbar-default.navbar-fixed-bottom {
+    border: 0px;
+    background-color: rgba(0,0,0,0);
+}
+#pied {
+    background-color:#000;
+}
