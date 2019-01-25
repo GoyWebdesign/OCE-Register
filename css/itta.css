@@ -2,30 +2,99 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i');
 body {
     font-family: Lato, sans-serif;
-    font-size: 16px;
+    font-size: 17px;
+    font-weight: 300;
 }
-.navbar {border-radius: 0px;}
-.bg-itta {
-    background-color: hsla(182,59%,48%,0.50);
-}
-.navbar-brand.color-itta {
-    margin-top:-4px;
+/* */
+.navbar {
+    border-radius: 0px;
+    position: relative;
+    margin-bottom: 00px;
+    border: 1px solid transparent;
+    background-color: rgba(255,255,255,1.00);
+    font-weight: 300;
 }
 .navbar-brand.color-itta {
     font-weight: 900;
     letter-spacing: 4px;
     display: none;
 }
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: rgba(180,0,104,1.00);
+    background-color: rgba(235, 235, 235, 1.0);
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color:  rgba(180,0,104,1.00);
+  background-color: transparent;
+}
 .breadcrumb {
-    margin-top: -20px;
-    background-color: #B40068;
-    color: #FFF;
+    background-color: rgba(180,0,104,1.00);
+    color: rgba(255,255,255,1.00);
+    border-radius: 0px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    max-height: 27px;
+    
+}
+/* */
+.btn-info {
+    color: rgba(255,255,255,1.00);
+    background-color: rgba(0, 176, 174, 1.0);
+    border-color: rgba(0, 176, 174, 1.0);
     border-radius: 0px;
 }
-.container .navbar.navbar-default.navbar-fixed-bottom {
-    border: 0px;
-    background-color: rgba(0,0,0,0);
+.btn-info:focus,
+.btn-info.focus {
+    color: rgba(255,255,255,1.00);
+    background-color: rgba(0, 176, 174, 1.0);
+    border-color: rgba(0, 176, 174, 1.0);
 }
-#pied {
-    background-color:#000;
+.btn-info:hover {
+    color: rgba(0, 176, 174, 1.0);
+    background-color: rgba(255,255,255,1.00);
+    border-color: rgba(0, 176, 174, 1.0);
+}
+.btn-info:active,
+.btn-info.active,
+.open > .dropdown-toggle.btn-info {
+    color: rgba(255,255,255,1.00);
+    background-color: rgba(49,176,213,1.00);
+    border-color: rgba(38,154,188,1.00);
+}
+/* */
+.progress-bar-success {
+    background-color: rgba(241,241,241,1.00);
+    color: rgba(51,51,51,1.00);
+    font-weight: 400;
+}
+.progress-bar-danger {
+  background-color: rgba(180,0,104,1.00);
+  font-weight: 400;
+}
+/* */
+footer {
+    background-color: rgba(0,0,0,1.00);
+    color:rgba(255,255,255,1.00);
+    min-height: 50px;
+}
+footer p {
+    line-height: 50px;
+    font-weight: 400;
+}
+footer a {
+    color: rgba(255,255,255,1.00);
+    text-decoration: none;
+}
+footer a:hover,
+footer a:focus {
+    color: rgba(180,0,104,1.00);
+    text-decoration: none;
+}
+footer a:focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
 }
