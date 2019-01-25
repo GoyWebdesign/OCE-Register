@@ -1,11 +1,16 @@
 @charset "utf-8";
+/* typographie */
 @import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i');
 body {
     font-family: Lato, sans-serif;
     font-size: 17px;
     font-weight: 300;
 }
-/* */
+.jour p {
+    font-size:14px;
+    font-weight: 400;
+}
+/* barre de navigation */
 .navbar {
     border-radius: 0px;
     position: relative;
@@ -14,11 +19,18 @@ body {
     background-color: rgba(255,255,255,1.00);
     font-weight: 300;
 }
+.navbar .navbar-right {
+ 
+}
+.navbar .navbar-form.navbar-right {
+
+}
 .navbar-brand.color-itta {
     font-weight: 900;
     letter-spacing: 4px;
     display: none;
 }
+/* liens de la barre de navigation */
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
@@ -30,6 +42,7 @@ body {
   color:  rgba(180,0,104,1.00);
   background-color: transparent;
 }
+/* breadcrumb */
 .breadcrumb {
     background-color: rgba(180,0,104,1.00);
     color: rgba(255,255,255,1.00);
@@ -40,7 +53,7 @@ body {
     max-height: 27px;
     
 }
-/* */
+/* override bouton BS */
 .btn-info {
     color: rgba(255,255,255,1.00);
     background-color: rgba(0, 176, 174, 1.0);
@@ -65,7 +78,25 @@ body {
     background-color: rgba(49,176,213,1.00);
     border-color: rgba(38,154,188,1.00);
 }
-/* */
+/* classes de date js */
+.badge.semaine-chiffre {
+    background-color: rgba(180,0,104,1.00);
+}
+.date-debut, .date-fin {
+    font-weight: 700;
+    color: rgba(180,0,104,1.00);
+}
+/* progress bars */
+.progress {
+  height: 30px;
+  margin-bottom: 20px;
+  
+}
+.progress-bar {
+  height: 100%;
+  font-size: 14px;
+  line-height: 30px;  
+}
 .progress-bar-success {
     background-color: rgba(241,241,241,1.00);
     color: rgba(51,51,51,1.00);
@@ -74,6 +105,13 @@ body {
 .progress-bar-danger {
   background-color: rgba(180,0,104,1.00);
   font-weight: 400;
+}
+/* */
+.form-control:focus {
+  border-color: rgba(0, 176, 174,1.00);
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(0, 176, 174, 0.6);
+          box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(0, 176, 174, 0.6);
 }
 /* */
 footer {
@@ -97,4 +135,10 @@ footer a:focus {
 footer a:focus {
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
+}
+/* */
+.modale2 {
+    background-color: #FFF;
+    margin-top: 2rem;
+    padding-top: 2rem;
 }
