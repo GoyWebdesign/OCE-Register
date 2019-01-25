@@ -25,7 +25,12 @@
             <div class="container"> 
                 <!-- Brand and toggle get grouped for better mobile display --><span style="font-size: 16px"></span>
                 <div class="navbar-header"><img src="https://www.itta.net/sites/all/themes/ittafront/ITTA-web-logo.svg" alt="ITTA" width="218" class="img-responsive">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation-principale" aria-expanded="false"><span class="sr-only">Menu</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation-principale" aria-expanded="false">
+                        <span class="sr-only">Menu</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
                     <a class="navbar-brand color-itta" href="#">ITTA</a></div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navigation-principale">
@@ -46,21 +51,12 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li class="active"><a href="#">Accueil</a></li>
                     </ul>
-                    <!--<ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Lien</a></li>
-                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu action<span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Action</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">Lien</a></li>
-                            </ul>
-                        </li>
-                    </ul>--> 
+                    
                 </div>
-                <!-- /.navbar-collapse --></div>
-            <!-- /.container-fluid --></nav>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
         <div class="container-fluid breadcrumb">
             <div class="container">
                 <div class="">Formations PAO Adobe » Accueil</div>
@@ -102,7 +98,7 @@
             <div class="col-sm-2 col-xs-2 action text-right col-lg-1 col-md-1">
                 <p>&nbsp;</p>
                 <p>
-                    <button type="button" class="btn btn-sm btn-info open" data-date_debut="22.04.2019" data-date_fin="28.04.2019">Inscrire</button>
+                    <button type="button" class="btn btn-sm btn-info open" data-date_debut="22.04.2019" data-date_fin="26.04.2019">Inscrire</button>
                 </p>
             </div>
         </div>
@@ -212,15 +208,15 @@
                         <!-- form -->
                         <form class="form-horizontal" id="inscription">
                             <h3 class="col-sm-10 col-sm-offset-2 media-heading">Informations du Candidat</h3>
-                            <h3>
-                                <!-- form-group -->
-                            </h3>
+                            
+                            <!-- form-group -->
                             <div class="form-group prenom-candidat">
                                 <label for="prenom_candidat" class="col-sm-2 control-label">Prénom</label>
                                 <div class="col-sm-10">
                                     <input name="prenom_candidat" type="text" required="required" class="form-control" id="prenom_candidat" placeholder="Prénom">
                                 </div>
                             </div>
+                            
                             <!-- form-group -->
                             <div class="form-group nom-candidat">
                                 <label for="nom_candidat2" class="col-sm-2 control-label">Nom</label>
@@ -228,6 +224,7 @@
                                     <input name="nom_candidat" type="text" required="required" class="form-control" id="nom_candidat" placeholder="Nom">
                                 </div>
                             </div>
+                            
                             <!-- form-group -->
                             <div class="form-group tel-candidat">
                                 <label for="tel_candidat" class="col-sm-2 control-label">Téléphone</label>
@@ -235,13 +232,15 @@
                                     <input name="tel_candidat" type="text" required="required" class="form-control" id="tel_candidat" placeholder="+41 22 000 00 00">
                                 </div>
                             </div>
+                            
                             <!-- form-group -->
                             <div class="form-group email-candidat">
                                 <label for="email_candidat" class="col-sm-2 control-label">E-mail</label>
                                 <div class="col-sm-10">
-                                    <input name="email_candidat" type="text" required="required" class="form-control" id="email_candidat" placeholder="nom@domaine.net">
+                                    <input name="email_candidat" type="email" required="required" class="form-control" id="email_candidat" placeholder="nom@domaine.net">
                                 </div>
                             </div>
+                            
                             <!-- form-group -->
                             <div class="form-group assurance_candidat">
                                 <label for="assurance_candidat" class="col-sm-2 control-label">Assurance</label>
@@ -252,13 +251,15 @@
                                     </select>
                                 </div>
                             </div>
+                            
                             <!-- form-group -->
                             <div class="form-group numero_candidat">
                                 <label for="numero_candidat" class="col-sm-2 control-label">N° assuré</label>
                                 <div class="col-sm-10">
-                                    <input name="numero_candidat" type="text" required="required" class="form-control" id="numero_candidat" placeholder="N° assuré (PLASTA)">
+                                    <input name="numero_candidat" type="number" required="required" class="form-control" id="numero_candidat" placeholder="N° assuré (PLASTA)">
                                 </div>
                             </div>
+                            
                             <!-- form-group -->
                             <div class="form-group">
                                 <div class="col-sm-8 col-sm-offset-2">
