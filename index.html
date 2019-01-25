@@ -17,6 +17,8 @@
 
 </head>
 <body>
+    
+<!-- .wide > nav + breadcrumb -->
 <div class="wide">
     <div>
         <nav class="navbar navbar-default">
@@ -66,9 +68,10 @@
         </div>
     </div>
 </div>
-<!--END .wide / nav / breadcrumb -->
-
-<div class="container-fluid"><!--principal -->
+<!-- END .wide > nav + breadcrumb -->
+    
+<!-- .principal -->
+<div class="container-fluid">
     <div class="container">
         <div class="row semaine-nav">
             <div class="col-lg-4 text-left col-md-4 col-sm-4 col-xs-4"> <a type="button" class="btn btn-info"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Semaine précédente</a> </div>
@@ -122,6 +125,7 @@
             </div>
         </div>
         <hr>
+        <!--END section#semaine_X1-->
         <div class="row">
             <div class="col-lg-12 text-center">
                 <div class="well wells-itta well-sm">
@@ -167,10 +171,12 @@
             </div>
         </div>
         <hr>
+        <!--END section#semaine_X2-->
     </div>
 </div>
 <!--END principal-->
-
+    
+<!-- footer#pied -->
 <footer class="pied">
     <div class="container">
         <div class="row">
@@ -186,8 +192,9 @@
         </div>
     </div>
 </footer>
+<!-- END footer#pied -->
 
-<!-- Modale1 -->
+<!-- .modale > form -->
 <div id="" class="modal fade modale" role="dialog">
     <div class="modal-dialog modal-lg">
         <!-- Modal content -->
@@ -268,29 +275,12 @@
         </div>
     </div>
 </div>
+<!-- END .modale > form -->
 
-<!-- Modale2 -->
-<div class="container-fluid modal fade modal-lg modale2" role="dialog">
-    <div class="row">
-        <div class="col-sm-12">
-            <div class="well well-lg">
-                <h2>Inscription aux cours du <span class="date-debut">22.04.2019</span> au <span class="date-fin">28.04.2019</span></h2>
-            </div>
-            <form class="form-horizontal">
-                <div class="form-group">
-                    <label for="" class="col-sm-2 control-label">Prénom</label>
-                    <div class="col-sm-10">
-                        <input name="" type="text" required="required" class="form-control" id="" placeholder="Prénom">
-                    </div>
-                </div>
-            </form>
-            <p><a class="btn btn-primary btn-lg" href="#" role="button" data-dismiss="modal">Fermer ceci</a></p>
-        </div>
-    </div>
-</div>
-<script src="js/jquery-1.11.3.min.js"></script><script src="js/bootstrap-3.3.7.js"></script>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/bootstrap-3.3.7.js"></script>
 <script>
-    // transmettre à la modale les dates des boutons d'ouvertures avant de l'ouvrir
+// transmettre à la modale les dates des boutons d'ouvertures avant de l'ouvrir
 $( document ).ready( function () {
     $( '.open' ).on( 'click', function () {  
         var date_debut = $( this ).attr( 'data-date_debut' );
@@ -303,5 +293,6 @@ $( document ).ready( function () {
     });    
 });
 </script>
+    
 </body>
 </html>
