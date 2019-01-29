@@ -6,6 +6,23 @@ body {
     font-size: 17px;
     font-weight: 300;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: inherit;
+  font-weight: 700;
+  line-height: 1.1;
+  color: inherit;
+}
 .jour p {
     font-size:14px;
     font-weight: 400;
@@ -16,7 +33,7 @@ body {
     position: relative;
     margin-bottom: 00px;
     border: 1px solid transparent;
-    background-color: rgba(255,255,255,1.00);
+    background-color: #FFFFFF;
     font-weight: 300;
 }
 .navbar .navbar-right {
@@ -34,18 +51,18 @@ body {
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-    color: rgba(180,0,104,1.00);
-    background-color: rgba(235, 235, 235, 1.0);
+    color: #B40068;
+    background-color: #EBEBEB;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color:  rgba(180,0,104,1.00);
+  color:  #B40068;
   background-color: transparent;
 }
 /* breadcrumb */
 .breadcrumb {
-    background-color: rgba(180,0,104,1.00);
-    color: rgba(255,255,255,1.00);
+    background-color: #B40068;
+    color: #FFFFFF;
     border-radius: 0px;
     font-size: 14px;
     font-weight: 400;
@@ -53,38 +70,55 @@ body {
     max-height: 27px;
     
 }
+/* */
+.principale {
+    height: 75vh;
+}
 /* override bouton BS */
 .btn-info {
-    color: rgba(255,255,255,1.00);
-    background-color: rgba(0, 176, 174, 1.0);
-    border-color: rgba(0, 176, 174, 1.0);
+    color: #FFFFFF;
+    background-color: #00B0AE;
+    border-color: #00B0AE;
     border-radius: 0px;
 }
 .btn-info:focus,
 .btn-info.focus {
-    color: rgba(255,255,255,1.00);
-    background-color: rgba(0, 176, 174, 1.0);
-    border-color: rgba(0, 176, 174, 1.0);
+    color: #FFFFFF;
+    background-color: #00B0AE;
+    border-color: #00B0AE;
 }
 .btn-info:hover {
-    color: rgba(0, 176, 174, 1.0);
-    background-color: rgba(255,255,255,1.00);
-    border-color: rgba(0, 176, 174, 1.0);
+    color: #00B0AE;
+    background-color: #FFFFFF;
+    border-color: #00B0AE;
 }
 .btn-info:active,
 .btn-info.active,
 .open > .dropdown-toggle.btn-info {
-    color: rgba(255,255,255,1.00);
-    background-color: rgba(49,176,213,1.00);
-    border-color: rgba(38,154,188,1.00);
+    color: #FFFFFF;
+   background-color: #FFFFFF;
+    border-color: #00B0AE;
+}
+.btn-info:active:hover,
+.btn-info.active:hover,
+.open > .dropdown-toggle.btn-info:hover,
+.btn-info:active:focus,
+.btn-info.active:focus,
+.open > .dropdown-toggle.btn-info:focus,
+.btn-info:active.focus,
+.btn-info.active.focus,
+.open > .dropdown-toggle.btn-info.focus {
+    color: #FFFFFF;
+    background-color: #FFFFFF;
+    border-color: #00B0AE;
 }
 /* classes de date js */
 .badge.semaine-chiffre {
-    background-color: rgba(180,0,104,1.00);
+    background-color: #B40068;
 }
 .date-debut, .date-fin {
     font-weight: 700;
-    color: rgba(180,0,104,1.00);
+    color: #B40068;
 }
 /* progress bars */
 .progress {
@@ -103,7 +137,7 @@ body {
     font-weight: 400;
 }
 .progress-bar-danger {
-  background-color: rgba(180,0,104,1.00);
+  background-color: #B40068;
   font-weight: 400;
 }
 /* */
@@ -116,20 +150,20 @@ body {
 /* */
 footer {
     background-color: rgba(0,0,0,1.00);
-    color:rgba(255,255,255,1.00);
-    min-height: 50px;
+    color:#FFFFFF;
+    min-height: 25vh;
 }
 footer p {
     line-height: 50px;
     font-weight: 400;
 }
 footer a {
-    color: rgba(255,255,255,1.00);
+    color: #FFFFFF;
     text-decoration: none;
 }
 footer a:hover,
 footer a:focus {
-    color: rgba(180,0,104,1.00);
+    color: #B40068;
     text-decoration: none;
 }
 footer a:focus {
@@ -142,3 +176,22 @@ footer a:focus {
     margin-top: 2rem;
     padding-top: 2rem;
 }
+/* */
+/* Ripple effect */
+.ripple {
+  background-position: center;
+  transition: background 0.8s;
+  box-shadow: 0 0 4px #999;
+  outline: none;
+}
+.ripple:hover {
+  background: transparent radial-gradient(circle, transparent 1%, rgba(0, 176, 174, 0.2) 1%) center/15000%;
+}
+.ripple:active {
+  color:white;
+  background-color: transparent;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+/* Button style */
