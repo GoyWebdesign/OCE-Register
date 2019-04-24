@@ -59,6 +59,7 @@ h6,
   color:  #B40068;
   background-color: transparent;
 }
+.navbar
 /* breadcrumb */
 .breadcrumb {
     background-color: #B40068;
@@ -195,3 +196,7 @@ footer a:focus {
 }
 
 /* Button style */
+#navigation-principale .nav.navbar-nav, #navigation-principale .navbar-form.navbar-right {
+	padding-top: 26px;
+}
+
